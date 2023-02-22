@@ -20,10 +20,6 @@ export default function BoundingStl() {
                 //This will give the number of triangles
                 let facets = view1.getUint32(80, true);
 
-                //Reading the first normal vector
-                //3 floating 32 bit integers (total of 12 bytes)
-
-
                 //Start the offset from the first normal vector in the file
                 let offset = 84;
                 let newOffset;
