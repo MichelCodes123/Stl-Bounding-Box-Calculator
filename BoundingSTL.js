@@ -1,3 +1,5 @@
+//Stl file format specifications from : https://en.wikipedia.org/wiki/STL_(file_format)
+
 import React from "react";
 
 export default function BoundingStl() {
