@@ -32,6 +32,7 @@ export default function BoundingStl() {
                 let xarr = [];
                 let yarr = [];
                 let zarr = [];
+                let x,y,z;
 
                 //Loop through all the triangles
                 for (let i = 0; i < facets; i++) {
@@ -40,9 +41,9 @@ export default function BoundingStl() {
                     newOffset = offset + 12;
                     for (let i = 0; i < 3; i++) {
 
-                        let x = view1.getFloat32(newOffset, true);
-                        let y = view1.getFloat32(newOffset + 4, true);
-                        let z = view1.getFloat32(newOffset + 8, true);
+                        x = view1.getFloat32(newOffset, true);
+                        y = view1.getFloat32(newOffset + 4, true);
+                        z = view1.getFloat32(newOffset + 8, true);
 
                         xarr.push(x);
                         yarr.push(y);
